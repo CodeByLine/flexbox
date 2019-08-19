@@ -1,0 +1,147 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+
+  /* flexbox styling */
+  display: flex;
+  justify-content: center;   
+  /* justify-content: flex-end; */
+}
+
+    /* Other values for justify-content are shown below:
+
+    center
+    flex-start
+    flex-end
+    space-around
+    space-between */
+
+.menu {
+  border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+
+
+  display: flex;
+  /* justify-content: space-around; */
+  /* Other values: center, flex-start, flex-end */
+  justify-content: space-between;
+}
+
+
+  .links {
+    border: 1px solid #fff;  
+    display: flex;
+    justify-content: flex-end;
+  }
+  .login {
+    margin-left: 20px;
+  }
+
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* align-items: stretch; */
+  }
+
+  /* The available options for align-items is similar to justify-content:
+
+  center
+  flex-start   (top)
+  flex-end      (bottom)
+  stretch
+  baseline */
+
+
+  /* .social,
+  .logo,
+  .subscribe {
+    border: 1px solid #5995DA;
+  } */
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    align-items: center; 
+  }
+
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+  
+
+  .social,
+  .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  /* align-item property:
+  center
+  flex-start   (top)
+  flex-end      (bottom)
+  stretch
+  baseline */
+
+
+  .footer {
+    display: flex;
+    justify-content: center;   
+    align-items: flex-end;
+    background-color: #1d4680;
+  }
+
+   .footer-item {
+    color: #ffffff;
+    height: 70px;
+    /* flex: 1; */
+    flex: initial;
+    justify-content: center;   
+    align-items: center;
+   }
+   
+   /* .footer-one {
+    flex: initial;
+   } */
